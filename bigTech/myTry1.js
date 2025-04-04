@@ -29,6 +29,16 @@ compose(time, sqr, sum)(1)
 compose(time, sqr, sum)(1, 2, 3)
 // compose(HOC1, HOC2, HOC3)({props, state}, {props, state})
 
+/*
+// 1 вариант (композиция вручную)
+const EnhancedProfile1 = withAuth(withLogging(ProfilePage));
+
+// 2 вариант (функция-композитор)
+const compose = (...hocs: Function[]) => (Component: any) =>
+  hocs.reduceRight((acc, hoc) => hoc(acc), Component);
+
+const EnhancedProfile2 = compose(withAuth, withLogging)(ProfilePage);
+*/
 
 // ----- 3 -----
 
