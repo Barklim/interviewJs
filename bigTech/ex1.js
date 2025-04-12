@@ -1,95 +1,83 @@
-function Count() {
-	let counter = 0
+// uchi.r 27-
 
-	return () => {
-		console.log(counter++)
-	}
+// cookie, session...
+// какие проблемы решает redux
+// зачем в redux иммутабельность
+// в redux rtk какую проблему решают thunk-и
+
+'use strict';
+
+function a() {
+    console.log(this)
 }
 
-const c = new Count()
-
-c() // 0
-c() // 1
-
-console.log(new Count())
-c.count = 0
-
-c() // 2
-c() // 3
-
-const b = new Count()
-
-b() //
-b() //
-
-// ---- ----
-
-for (var i = []; i.length < 3; i.push(2)) {
-	setTimeout(() => {
-		console.log(i)
-	}, i.length * 1000)
+function b() {
+    a()
 }
 
-for (var i = []; i.length < 3; i.push(2)) {
-	let snapshot = [...i]; // Копируем массив перед setTimeout
-	setTimeout(() => {
-		console.log(snapshot)
-	}, i.length * 1000)
+const c = {
+    a,
+    b
 }
 
-for (var i = []; i.length < 3; i.push(2)) {
-	setTimeout((args) => {
-		console.log(args)
-	}, i.length * 1000, [...i])
+c.a()
+c.b()
+
+// ----- 2 -----
+
+'use strict';
+
+function a() {
+    console.log(this)
 }
 
-// ---- ----
-
-// чистая ф-ция при одних и тех же пар-рах возвращает одно и тоже значение (нет побочных эффектов)
-
-setTimeout(() => console.log(1))
-Promise.reject(2).catch(console.log)
-Promise.resolve().then(() => setTimeout(() => console.log(3)))
-new Promise((resolve) => setTimeout(resolve)).then(() => console.log(4))
-Promise.resolve(5).then(console.log)
-setTimeout(() => console.log(6))
-console.log(7)
-
-// 7 2 5 1 4 6 3
-
-// при ревью обработка ошибок, вывод после хуков, хуки не могут быть в ифах, обернуть в колбэк, при размонтировании отписка
-// обертка вызова в трай кэтч
-
-// ---- ----
-
-const items = [
-    { id: 1, name: 'Alice' },
-    { id: 2, name: 'Bob' },
-    { id: 1, name: 'Alice' },
-    { id: 3, name: 'Charlie' },
-    { id: 2, name: 'Bob' },
-]
-
-const uniqueltems = Array.from(new Set(items));
-console.log(uniqueltems)
-
-// ---- ----
-
-async function b() {
-	return 1
+function b() {
+    a()
 }
 
-async function a() {
-	return b()
+const c = {
+    a,
+    b: () => {
+        console.log(this)
+    }
 }
 
-const res = await a()
-console.log(res)
+c.a()
+c.b()
 
-// ---- ----
+// ----- 3 -----
 
-// Утилитарные типы Omit, Pick, Partial, Extract, ReturnType, Exclude, Parameters
-// Declaration merging
-// 	если есть 2а интерфейса в приложении где у одного сво-во b а у другого c то в результате будет и b и c
-// 	удобно когда хотим расширить типизацию встроенной библиотеки
-// Strict null check
+// Как изменется браузерный дом после нажатия на кнопку
+// Какие изменеия произойдут в браузерным дом после нажатия на кнопку
+
+function SimpleButton(props) {
+    const [txt, setTxt] = useState(props.text || 'a')
+    const changeText = () => {
+        setTxt(txt + txt)
+    }
+
+    return (
+        <button onClick={changeText}>
+            {txt}
+        </button>
+    )
+}
+
+// ----- 4 -----
+
+function SimpleList(props) {
+    const [list, setList] = useState(props.list || ['a', 'b'])
+    const rotateList = () => {
+        // setList([...list].reverse())
+        setList([...list.reverse()])
+    }
+
+    return (
+        <div>
+            {list.map((txt, id) => (
+                <div key={id}>{txt}</div>
+            ))}
+            <button onClick={rotateList}>rotate</button>
+        </div>
+    )
+}

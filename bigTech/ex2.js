@@ -1,29 +1,18 @@
-// itRostik iFellow
-// https://codesandbox.io/p/sandbox/react-1-yv9rix?file=%2Fsc%2FApp.tsx%3A25%2C1
+// ojetto 31 | mock 41
 
-import { useCallback, useEffect, useState } from "react";
-import "./styles.css";
+// crp - crytical render path, 
+// единственное когда не происходит reflow это transfrom css
 
-// Написать TODO приложение. Два списка. Один список с не
-// Второй список с выполнеными задачами
-// Напротив каждой задачи кнопка переключатель Готово/В ра
-// При нажатии на кнопку статус задачи isDone меняется на
+// чем семантика отличается от доступности
+// параметрический/ad hoc полиморфизм
+// что может оставаться от ts после компиляции? енамы
+// system design - проектирование системы
+// физические способы хранения данных, жесткие диски, ssd, перфоркарты бабины. Оператива
+// в банке все сервисы общаются только http запросами? проблемы
+// инструменты горизонтальной репликации
+// инструменты увеливичающие скорость отдачи. Redis, ngnix, самим next-ом?
 
-interface Task {
-    id: number;
-    isDone: boolean;
-    taskName: string;
-}
-
-const initialTaskList: Task[] = [
-    { id: 1, taskName: "Задача 1", isDone: false },
-    { id: 2, taskName: "Задача 2", isDone: false },
-    { id: 3, taskName: "Задача 3", isDone: false },
-    { id: 4, taskName: "Задача 4", isDone: false },
-    { id: 5, taskName: "Задача 5", isDone: false },
-    { id: 6, taskName: "Задача 6", isDone: false },
-]
-
-export default function App() {
-    return <div>Can you write to do app</div>;
-}
+// review
+// обработка ошибки, мэпинг ролей, разделение логики а для случая graphql
+// magic string -> enum ролей
+// саша беспоясов solid book
