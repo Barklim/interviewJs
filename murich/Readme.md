@@ -1,14 +1,13 @@
-### rt
+#### best sources
 
-### best sources
+- Вячеслав егоров
+- [axel](https://dr-axel.de/)
+- дмитрий сошников [link](http://dmitrysoshnikov.com/)
+- [🤔](https://coursehunter.net/source/dmitriy-soshnikov)
 
-Вячеслав егоров
-[axel](https://dr-axel.de/)
-дмитрий сошников [link](http://dmitrysoshnikov.com/)
-[🤔](https://coursehunter.net/source/dmitriy-soshnikov)
+#### [Задачи с JavaScript собеседований и корректные решения к ним](https://www.youtube.com/watch?v=6H0e4c-SPgo&list=PL3ziSA8uO7KmJo-QbCvhj57cVW5JF5Nyx&index=7)
 
-
-### [rt](https://javascript-questions.vercel.app/)
+[rt](https://javascript-questions.vercel.app/)
 
 8. static method
 17. template literal
@@ -27,5 +26,4 @@ it blog
 [link](https://habr.com/ru/articles/492346/)
 
 [link](https://google.github.io/styleguide/jsguide.html)
-
 chrome://serviceworker-internals/
