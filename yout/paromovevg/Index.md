@@ -1,6 +1,8 @@
 ### Evolution com
-[link](https://miro.com/app/board/uXjVIGZWn20=/)
-[link](https://miro.com/app/board/uXjVL-oJ2gc=/)
+
+- Patterns React
+- [link](https://miro.com/app/board/uXjVIGZWn20=/)
+- [link](https://miro.com/app/board/uXjVL-oJ2gc=/)
 
 [link](https://github.com/orgs/fsd-course-hw/repositories)
 [link](https://github.com/EvgenyParomov?tab=repositories)
@@ -44,6 +46,17 @@ https://miro.com/app/board/uXjVLV5ZMmE=/
 
 #### form builder
 #### fsd
+
+Курс FSD -> архитектура Redux
+https://miro.com/app/board/uXjVNZWf40w=/
+	->
+	https://miro.com/app/board/uXjVI6LhN6A=/
+
+DI, фасад (=public api), архитектурные границы (верхнии нижние, на уровне друг в друге через (di, composition layer))
+ациклические зависимости,
+принцип устойчивости абстракций, принцип устойчивости абстракций, кричащая архитектура
+
+###### 2. Dependency Inversion - основной инструмент архитектора
 
 ###### Какие Архитектурные принципы Реализует FSD
 ###### Dependency Inversion - основной инструмент архитектора

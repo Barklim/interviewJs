@@ -27,3 +27,17 @@ it blog
 
 [link](https://google.github.io/styleguide/jsguide.html)
 chrome://serviceworker-internals/
+
+### garbage
+
+(books)[https://www.youtube.com/watch?v=LVVgJGvq_go&list=WL&index=8&t=231s&ab_channel=YandexforFrontend]
+
+1. Выразительный JS
+2. Далее серии книг Кайла Симпсона все и желательно не новую версию а именно старые предпоследние
+3. Мэт Фрисби JS для профессионалов
+4. Рейзиг Нинзя JS
+5. Как устроен JS Дуглас Крокфорд создатель JSON
+6. Закас JS для профессионалов
+7. Луис Атенсио фугкциональное программрование JS
+8. Кайл Симпсон функциональное программрование
+9. Ти Джей Краудер Javascript
