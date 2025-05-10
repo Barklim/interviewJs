@@ -41,3 +41,6 @@ chrome://serviceworker-internals/
 7. Луис Атенсио фугкциональное программрование JS
 8. Кайл Симпсон функциональное программрование
 9. Ти Джей Краудер Javascript
+
+(HTML: The Living Standard)[https://html.spec.whatwg.org/dev/infrastructure.html#:~:text=The%20term%20%22JavaScript%22%20is%20used%20to%20refer%20to%20ECMA%2D262,%20rather%20than%20the%20official%20term%20ECMAScript,%20since%20the%20term%20JavaScript%20is%20more%20widely%20known.]
+(stateofjs)[https://stateofjs.com/en-US]
