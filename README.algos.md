@@ -3,6 +3,7 @@
 - [Алгоритмика:Tinkoff Generation](https://ru.algorithmica.org/)
 - [ifmo](https://neerc.ifmo.ru/wiki/index.php?title=%D0%97%D0%B0%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0)
 - [buil-you-own-x](https://github.com/codecrafters-io/build-your-own-x)
+	- браузерный файловый менеджер или интерактивная диаграмма ганта
 
 ### Algo for bigtech
 
