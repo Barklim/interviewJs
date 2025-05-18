@@ -44,3 +44,18 @@ chrome://serviceworker-internals/
 
 (HTML: The Living Standard)[https://html.spec.whatwg.org/dev/infrastructure.html#:~:text=The%20term%20%22JavaScript%22%20is%20used%20to%20refer%20to%20ECMA%2D262,%20rather%20than%20the%20official%20term%20ECMAScript,%20since%20the%20term%20JavaScript%20is%20more%20widely%20known.]
 (stateofjs)[https://stateofjs.com/en-US]
+
+
+
+
+### JavaScript Live Coding
+### leet 
+### coding 11
+memory heap get snapshot
+1974 knut кодер должен уметь писать код так чтобы компилятор мог взять код и собрать его в оптимальной форме
+которая характерна для текущей архитектуры. Должен знать как работает его оптимизирующий компилятор.
+Не заниматься микро оптимизациями а писать так чтобы не мешать оптимизирующему компилятору делать код производительным
+
+не удаляйте не добавляйте свойства из объектов и не меняйте тип проперти, если нужно часто класть и доставать из объекта юзаем map, set.
+
+codewars > leetcode
